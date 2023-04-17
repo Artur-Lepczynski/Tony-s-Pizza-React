@@ -1,0 +1,23 @@
+.page{
+  margin: 0px;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  width: 95%;
+  max-width: 800px;
+  /* min-height: 300px; */
+  padding: 5px 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.card button{
+  width: 130px;
+  margin: 40px auto;
+  font-size: 1em;
+}

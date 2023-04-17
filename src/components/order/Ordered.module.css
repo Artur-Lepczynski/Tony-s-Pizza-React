@@ -1,0 +1,42 @@
+.main-wrapper{
+  width: 95%;
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 5px 0px;
+}
+
+.main-wrapper h2{
+  margin: 5px;
+  text-align: center;
+}
+
+.main-wrapper button{
+  width: 160px;
+  margin: 10px auto;
+  font-size: 1.1em;
+}
+
+.delivery{
+  margin: 30px auto;
+
+  text-align: center;
+}
+
+.time{
+  width: 200px;
+  margin: 0px auto;
+  border: 1px solid var(--primary-accent1);
+  border-radius: 5px;
+
+  font-size: 4em;
+}
+
+.time p{
+  margin: 5px auto; 
+}
+
+.delivered{
+  text-align: center;
+  color: green;
+  font-size: 1.3em;
+}

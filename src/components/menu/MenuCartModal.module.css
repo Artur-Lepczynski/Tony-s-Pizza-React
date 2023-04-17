@@ -1,0 +1,76 @@
+.modal-wrapper{
+  width: 100%; 
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: var(--primary-animation-duration) ease-in appear-backdrop; 
+}
+
+@keyframes appear-backdrop{
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+.modal{
+  width: 95%;
+  max-width: 800px;
+}
+
+.modal-header h2{
+  text-align: center;
+}
+
+.modal-items{
+  max-height: 440px;
+  overflow-y: auto;
+}
+
+.modal-empty{
+  text-align: center;
+  font-size: 1.2em;
+  margin: 10px;
+}
+
+.modal-footer{
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-total{
+  font-size: 1.4em;
+  margin: 5px 10px; 
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-actions{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 5px 10px;
+}
+
+.modal-actions button{
+  width: 80px;
+  margin-left: 10px;
+  font-size: 1em;
+}
+
+
+

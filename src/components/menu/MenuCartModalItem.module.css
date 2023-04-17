@@ -1,0 +1,50 @@
+.modal-item{
+  width: 95%;
+  height: 110px;
+  margin: 10px auto; 
+  padding: 10px;
+  border: 1px solid black; 
+  border-radius: 5px; 
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.modal-item img {
+  width: 100px;
+  height: 100px;
+}
+
+.modal-item-info{
+  flex: 1 1 auto;
+  height: 100px;
+  margin-left: 13px;
+}
+
+.item-price{
+  display: inline-block;
+  margin: 0px 10px;
+  font-size: 1.05em;
+}
+
+.item-amount{
+  display: inline-block;
+  margin: 0px 10px;
+  padding: 5px;
+  border: 1px solid var(--primary-accent1);
+  border-radius: 5px;
+}
+
+.item-actions{
+  height: 100%;
+  margin-right: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.item-actions button {
+  font-size: 1.1em;
+}

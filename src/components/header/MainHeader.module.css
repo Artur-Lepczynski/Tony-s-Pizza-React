@@ -1,0 +1,77 @@
+.header {
+  width: 100%;
+  height: var(--header-height);
+  padding: 0 50px;
+  border-bottom: 2px solid rgb(71, 71, 71);
+
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+  background-color: var(--bg4);
+}
+
+.header img {
+  height: 80%;
+}
+
+.logo-wrapper {
+  height: 100%;
+  flex-basis: 260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* background-color: darkgrey; */
+}
+
+.link-home{
+  color: black;
+}
+
+.link-home h1:hover{
+  color: red;
+}
+
+.header a, 
+.header a:link, 
+.header a:visited {
+  text-decoration: none;
+  
+}
+
+.header-name{
+  width: 200px;
+  margin: 0;
+  font-weight: 300;
+}
+
+.order-button{
+  width: 100px;
+  font-size: 1.0em;
+}
+
+.header nav {
+  flex-basis: 240px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: azure; */
+}
+
+.link{
+  width: 45%;
+  margin-left: 15px;
+}
+
+.account{
+  width: 35%;
+  margin-left: 15px;
+  font-size: 1.2em;
+}
