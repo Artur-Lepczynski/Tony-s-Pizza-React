@@ -40,3 +40,22 @@
   color: green;
   font-size: 1.3em;
 }
+
+.delivery {
+  margin: 30px auto;
+
+  text-align: center;
+}
+
+.time {
+  width: 60%;
+  margin: 0px auto;
+  border: 1px solid var(--primary-accent1);
+  border-radius: 5px;
+
+  font-size: 1.5em;
+}
+
+.time p {
+  margin: 5px auto;
+}

@@ -28,7 +28,7 @@ export default function ContextProvider(props) {
         ...prevState,
         ordered: true,
         paymentMethod: action.paymentMethod,
-        deliveryTime: new Date().getTime() + 1000 * 60 * 60 * 0.25,
+        deliveryTime: new Date().getTime() + 1000 * 60 * 60 * 1,
         // deliveryTime: new Date().getTime() + 1000 * 15,
       };
     }else if(action.type === "RESET"){
