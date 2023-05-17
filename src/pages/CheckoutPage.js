@@ -31,7 +31,7 @@ export function loader() {
   const data = {
     name: localStorage.name || "User",
     lastName: localStorage.lastName || "Last Name",
-    email: localStorage.email,
+    email: localStorage.email || "Email address",
     address: localStorage.address || "Address",
     deliveryAddress: localStorage.deliveryAddress || "Delivery Address",
     password: localStorage.password,

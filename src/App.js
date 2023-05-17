@@ -2,7 +2,7 @@ import "./App.css";
 
 import RootLayout from "./pages/RootLayout";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
 
 //pages:
 import {
@@ -25,7 +25,7 @@ import OrderedPage, {
 import Authentication, { loader as authLoader } from "./pages/Authentication";
 import Account, { accountLoader } from "./pages/Account";
 import { action as logoutAction } from "./pages/Logout";
-import ErrorPage from "./pages/ErrorPage";
+// import ErrorPage from "./pages/ErrorPage";
 
 //store:
 import ContextProvider from "./store/CartContext";
@@ -42,7 +42,7 @@ function App() {
       path: "/",
       element: <RootLayout />,
       loader: rootLayoutLoader,
-      errorElement: <ErrorPage/>,
+      // errorElement: <ErrorPage/>,
       children: [
         {
           index: true,
@@ -79,6 +79,7 @@ function App() {
         { path: "/logout", action: logoutAction },
       ],
     },
+    {path: "*", element: <Navigate to={{pathname: "/"}}/>},
   ]);
 
   return (
